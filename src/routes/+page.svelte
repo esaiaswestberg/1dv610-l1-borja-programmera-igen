@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="flex flex-col gap-4 items-center justify-center h-screen">
+    <h1 class="font-semibold text-2xl">+page</h1>
+    <p class="text-gray-600">
+        This is a page inside the <code>src/routes</code> folder.
+    </p>
+</div>

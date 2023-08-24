@@ -4,12 +4,11 @@
   import Button from '../components/Button.svelte'
   import Input from '../components/Input.svelte'
   import TextButton from '../components/TextButton.svelte'
-  import WelcomeInformation from '../components/WelcomeInformation.svelte'
-  import WelcomeMessage from '../components/WelcomeMessage.svelte'
+  import User from '../components/User.svelte'
 
-  let name: string = ''
+  let name: string = 'Esaias'
   let inputError: string = ''
-  let welcomeMessageShown: boolean = false
+  let welcomeMessageShown: boolean = true
 
   const resetPage = () => {
     name = ''
@@ -33,8 +32,8 @@
 <div class="flex flex-col gap-4 items-center justify-center h-screen">
   <div class="flex flex-col w-full max-w-md gap-4">
     {#if welcomeMessageShown}
-      <WelcomeMessage {name} />
-      <WelcomeInformation />
+      <User {name} />
+
       <TextButton on:click={resetPage}>
         <Icon icon="material-symbols:arrow-back-ios-rounded" class="w-4 h-5" />
         Gå tillbaka

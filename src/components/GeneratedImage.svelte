@@ -30,7 +30,7 @@
       const x = i % 8
       const y = Math.floor(i / 8)
 
-      ctx.fillStyle = `rgb(0, ${brightnessG % 255}, ${brightnessB % 255})`
+      ctx.fillStyle = `rgb(0, ${brightnessG % 255}, ${brightnessB})`
       ctx.fillRect(x * width, y * height, width, height)
     }
   })

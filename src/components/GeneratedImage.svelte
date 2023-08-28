@@ -1,5 +1,5 @@
 <script lang="ts">
-  import sha512 from '$lib/sha512'
+  import { sha512 } from 'js-sha512'
   import { onMount } from 'svelte'
 
   export let input: string
